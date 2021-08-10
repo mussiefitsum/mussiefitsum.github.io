@@ -15,7 +15,8 @@ body {
     height: 4vh;
     background-color: #0B0C10;
     position: sticky;
-    padding: 20px 0;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
 }
 
 ul {
@@ -27,12 +28,8 @@ ul {
 }
 
 #web-nav {
-    float: left
-}
-
-#contact {
-    margin-top: 12px;
-    float: right;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 #logo {
@@ -53,15 +50,13 @@ ul {
     color: #66FCF1;
 }
 
-main {
-    text-align: center;
-}
 .container {
     display: flex;
     flex-direction: column;
 }
 
 #intro {
+    text-align: center;
     background: linear-gradient( rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57) ), 
     url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80) no-repeat center center;
     background-size: cover;
@@ -75,11 +70,28 @@ main {
  }
 
  #intro h3 {
-     font-size: 40px;
+     font-size: 30px;
      color: white;
  }
 
  #intro p {
      font-size: 20px;
      color: white;
+ }
+
+ #about {
+    margin: 0 2vw;
+    flex-direction: row;
+ }
+ 
+ #about h2 {
+     color: #1F2833;
+     font-size: 40px;
+ }
+
+ #about-text {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     float: right;
  }
