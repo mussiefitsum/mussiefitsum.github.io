@@ -56,8 +56,8 @@ ul {
 
 #intro {
     text-align: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), 
-    url(https://images.unsplash.com/photo-1526040652367-ac003a0475fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80)
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+    url(assets/banner-image.jpg)
      no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -68,7 +68,7 @@ ul {
 #intro h1 {
     font-size: 60px;
     color: white;
-    text-shadow: 2px 2px #F48046;
+    text-shadow: 3px 3px #F48046;
 }
 
 #intro h3 {
@@ -96,14 +96,14 @@ ul {
 #intro-btn:hover{
     background-color: #B65F86;
     border-color: #B65F86;
+    cursor: pointer;
 }
 
-#tech-section {
-    background-color: #EEF2F0;   
-
+#skills-section {
+    background-color: #F6F7F4;   
 }
 
-#tech-container {
+#skills-container {
     width: 80vw;
     margin-top: 50px;
     text-align: center;
@@ -113,20 +113,28 @@ ul {
 }
 
 
-#tech h2 {
+#skills-container h2 {
     font-size: 40px;
     color: #1F2833;
     margin-bottom: 50px;
 }
 
-#tech-icons-container {
+#skills-icons-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.tech-icons {
+.skill-groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.skills-icons {
     margin: 20px;
+    width: 80px;
 }
 
 #projects {
