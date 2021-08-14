@@ -89,7 +89,7 @@ ul {
     border-color: #F48046;
     border-radius: 3px;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -112,16 +112,18 @@ ul {
 
 }
 
-
 #skills-container h2 {
     font-size: 40px;
-    color: #1F2833;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #skills-icons-container {
     display: flex;
     flex-direction: column;
+}
+
+#skills-icons-container h3 {
+    font-size: 25px;
 }
 
 .skill-groups {
@@ -131,24 +133,95 @@ ul {
     align-items: center;
 }
 
+.skill-groups h4 {
+    font-size: 18px;
+}
 
 .skills-icons {
     margin: 20px;
     width: 80px;
+    padding: 40px 50px;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 
-#projects {
+#projects-section {
+    background-color: #40416C;
+}
+
+#projects-container {
+    width: 100vw;
+    margin-top: 50px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 
+#projects-container h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    background-color: #2f304a;
+    border-radius: 8px;
+    margin: 20px;
+    padding-bottom: 15px;
+}
+
+.project-card-img {
+    width: 100%;
+}
+
+.project-card-body {
+    padding: 10px;
+}
+
+.project-card-body h3, p {
+    color: white;
+}
+
+.project-card h3 {
+    font-size: 30px;
+}
+
+.card-button-section {
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.card-btns {
+    width: 130px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.card-btns:last-of-type {
+    margin-right: 2px;
+}
+
+
 footer {
-    background-color: black;
+    background-color: #191919;
     text-align: center;
     padding-bottom: 40px
 }
 
-footer h4, p {
+footer > h4, p {
     color: white;
     margin-bottom: 25px;
 }
