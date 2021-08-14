@@ -10,6 +10,13 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 12px;
+}
+
 .navbar {
     width: 100vw;
     height: 4vh;
@@ -84,13 +91,8 @@ ul {
 
 #intro-btn {
     background-color: #F48046;
-    width: 200px;
-    height: 50px;
-    border-color: #F48046;
-    border-radius: 3px;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 22px;
+    padding: 20px 55px;
 }
 
 #intro-btn:hover{
@@ -203,16 +205,33 @@ ul {
 }
 
 .card-btns {
-    width: 130px;
-    height: 40px;
     margin-right: 20px;
-    border-radius: 12px;
-    font-size: 16px;
+    font-size: 17px;
+    padding: 10px 25px;
 }
 
 .card-btns:last-of-type {
     margin-right: 2px;
 }
+
+#demo-btn {
+    background-color: #F48046;;   
+}
+
+#demo-btn:hover {
+    background-color: #B65F86;
+    cursor: pointer;
+}
+
+#github-btn {
+    background-color: #A8A7B8;
+}
+
+#github-btn:hover {
+    background-color: #B65F86;
+    cursor: pointer;
+}
+
 
 
 footer {
