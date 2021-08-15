@@ -5,28 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="public/Stylesheets/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dbfc7aa0af.js" crossorigin="anonymous"></script>
     <title>Mussie's Front End Developer Portfolio</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul id="web-nav">
-                <li class="nav-links"><a id="logo" target="_blank" href="#home">Mussie</a></li>
-                <li class="nav-links"><a target="_blank" href="#home">Home</a></li>
-                <li class="nav-links"><a target="_blank" href="#about">About Me</a></li>
-                <li class="nav-links"><a target="_blank" href="#projects">Projects</a></li>
-                <li class="nav-links"><a target="_blank" href="https://www.linkedin.com/in/mussiefitsum/">LinkedIn</a>
-                </li>
-                <li class="nav-links"><a target="_blank" href="https://github.com/mussiefitsum">GitHub</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="nav-links brand">
+                <a id="logo" target="_blank" href="#home">Mussie</a>
+            </div>
+            <div class="nav-links nav-link-toggle">
+                <i class="fas fa-bars fa-3x"></i>
+            </div>
+            <nav class="nav-items">
+                <div class="nav-links">
+                    <a target="_blank" href="#home">Home</a>
+                </div>
+                <div class="nav-links">
+                    <a target="_blank" href="#projects">Projects</a>
+                </div>
+                <div class="nav-links">
+                    <a target="_blank" href="#about">About Me</a>
+                </div>
+            </nav>
+            <nav class="nav-items nav-right">
+                <div class="nav-links">
+                    <a target="_blank" href="https://www.linkedin.com/in/mussiefitsum/">LinkedIn</a>
+                </div>
+                <div class="nav-links">
+                    <a target="_blank" href="https://github.com/mussiefitsum">GitHub</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="container" id="intro">
@@ -125,6 +142,22 @@
                 </div>
             </div>
         </section>
+        <section class="container" id="about-section">
+            <h2>About Me</h2>
+            <div id="about-container">
+                <img src="assets/about-image.jfif" alt="laptop" id="about-image">
+                <div id="about-text">
+                    <p>During my experience as a digital marketer, I realized that I was more interested in the UI/UX
+                        aspect of optimizing a business's digital presence. So, I used my free time during the peak of
+                        the pandemic
+                        to learn HTML, CSS, and JavaScript; as well as some backend technologies like ExpressJS and
+                        MongoDB.</p>
+                    <p>Now, I am using the skills I have learned to build user friendly applications and websites.</p>
+                    <p>When I am not working, I love playing basketball, reading fiction/informational books,
+                        meditating, and getting disappointed by the Pittsburgh Steelers</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <h4>Looking to Get in Touch?</h4>
@@ -147,6 +180,7 @@
             </div>
         </div>
     </footer>
+    <script src="public/JavaScripts/navbar.js"></script>
 </body>
 
 </html>

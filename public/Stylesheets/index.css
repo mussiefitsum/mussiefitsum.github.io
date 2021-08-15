@@ -18,24 +18,23 @@ a {
 }
 
 .navbar {
-    width: 100vw;
-    height: 4vh;
-    background-color: transparent;
-    position: absolute;
-    top: 2%;
+    display: flex;
+    padding: 16px;
+    position: sticky;
+    background-color: #2f304a;
 }
 
-ul {
+.nav-links {
+    padding-right: 8px;
+}
+
+.nav-items {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     align-items: center;
 }
 
-#web-nav {
-    justify-content: flex-start;
-    flex-wrap: wrap;
+.nav-right {
+    margin-left: auto;
 }
 
 #logo {
@@ -46,14 +45,42 @@ ul {
 }
 
 .nav-links a {
-    text-decoration: none;
     font-size: 17px;
-    color: white;
     margin: 0 2vw;
 }
 
 .nav-links a:hover {
     color: #F48046;
+}
+
+.nav-link-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar, .nav-items {
+        flex-direction: column;
+    }
+    
+    .nav-items {
+        display: none;
+    }
+
+    .nav-right {
+        margin-left: 0;
+    }
+
+    .nav-link-toggle-show {
+        display: flex;
+    }
+
+    .nav-link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        color: #F48046;
+    }
 }
 
 .container {
@@ -64,7 +91,7 @@ ul {
 #intro {
     text-align: center;
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-    url(assets/banner-image.jpg)
+    url(../../assets/banner-image.jpg)
      no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -144,7 +171,7 @@ ul {
     width: 80px;
     padding: 40px 50px;
     box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 #projects-section {
@@ -180,7 +207,7 @@ ul {
     background-color: #2f304a;
     border-radius: 8px;
     margin: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .project-card-img {
@@ -189,6 +216,7 @@ ul {
 
 .project-card-body {
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .project-card-body h3, p {
@@ -232,7 +260,65 @@ ul {
     cursor: pointer;
 }
 
+#about-section {
+    background-color: #F6F7F4;
+    text-align: center;
+    padding-bottom: 15px;
+}
 
+#about-section h2 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+#about-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+#about-image {
+    max-width: 30vw;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+#about-text {
+    max-width: 50vw;
+    text-align: left;
+    border-radius: 2px;
+}
+
+#about-text p {
+    color: black;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    #about-image, #about-text {
+        max-width: 80vw;
+        align-self: center;
+    }
+}
+
+#contact-section {
+    background-color: #40416C;
+    text-align: center;
+}
+
+#contact-section h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: -2px;
+}
 
 footer {
     background-color: #191919;
