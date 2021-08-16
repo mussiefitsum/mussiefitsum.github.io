@@ -95,7 +95,6 @@ a {
     url(../../assets/banner-image.png)
      no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
     align-items: center;
     padding: 20vh 0;
 }
