@@ -307,6 +307,9 @@ a {
         max-width: 80vw;
         align-self: center;
     }
+    #intro {
+        background: url(../../assets/banner-image-mobile.jpg) cover no-repeat center center;
+    }
 }
 
 #contact-section {
