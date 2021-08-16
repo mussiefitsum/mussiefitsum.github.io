@@ -92,7 +92,7 @@ a {
 #intro {
     text-align: center;
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-    url(../../assets/banner-image.jpg)
+    url(../../assets/banner-image.png)
      no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -338,6 +338,15 @@ footer > h4, p {
     flex-wrap: wrap;
     width: 40vw;
     margin: 0 auto;
+}
+
+@media (max-width: 488px) {
+    #intro h1 {
+        font-size: 45px;
+    }
+    .contact-icons img{
+        width: 40px;
+    }
 }
 
 
