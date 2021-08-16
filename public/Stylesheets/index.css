@@ -2,6 +2,7 @@ html, body {
     font-family: 'PT Sans', sans-serif;
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -90,7 +91,7 @@ a {
 
 #intro {
     text-align: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
     url(../../assets/banner-image.jpg)
      no-repeat center center;
     background-size: cover;

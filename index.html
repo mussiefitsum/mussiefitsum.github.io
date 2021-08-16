@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dbfc7aa0af.js" crossorigin="anonymous"></script>
     <title>Mussie's Front End Developer Portfolio</title>
 </head>
@@ -47,57 +48,58 @@
     </header>
     <main>
         <section class="container" id="intro">
-            <h1>Hello, I Am Mussie Fitsum</h1>
-            <h3>Front End Developer</h3>
-            <p>I love creating websites and applications that bring value to people!</p>
-            <a href="#skills" id="intro-btn">View More</a>
+            <h1 data-aos="fade-up" data-aos-delay="100">Hello, I Am Mussie Fitsum</h1>
+            <h3 data-aos="fade-up" data-aos-delay="300">Front End Developer</h3>
+            <p data-aos="fade-up" data-aos-delay="500">I love creating websites and applications that bring value to
+                people!</p>
+            <a href="#skills" id="intro-btn" data-aos="zoom-in" data-aos-delay="700">View More</a>
         </section>
         <section class="container" id="skills-section">
             <div id="skills-container">
                 <a name="skills"></a>
-                <h2>My Skills</h2>
+                <h2 data-aos="fade-up">My Skills</h2>
                 <div id="skills-icons-container">
-                    <h3>Languages</h3>
+                    <h3 data-aos="fade-up">Languages</h3>
                     <div class="skill-groups">
-                        <div class="skills-icons">
+                        <div data-aos="zoom-in" data-aos-delay="100" class="skills-icons">
                             <img src="assets/html-5.png" width="80" alt="HTML">
                             <h4>HTML</h4>
                         </div>
-                        <div class="skills-icons">
+                        <div data-aos="zoom-in" data-aos-delay="200" class="skills-icons">
                             <img src="assets/css3.png" width="80" alt="CSS">
                             <h4>CSS</h4>
                         </div>
-                        <div class="skills-icons">
+                        <div data-aos="zoom-in" data-aos-delay="300" class="skills-icons">
                             <img src="assets/javascript.png" width="80" alt="JavaScript">
                             <h4>JavaScript</h4>
                         </div>
                     </div>
-                    <h3>Technologies</h3>
-                    <div class="skill-groups">
+                    <h3 data-aos="fade-up">Technologies</h3>
+                    <div data-aos="zoom-in" data-aos-delay="100" class="skill-groups">
                         <div class="skills-icons">
                             <img src="assets/nodejs.png" width="80" alt="NodeJS">
                             <h4>NodeJS</h4>
                         </div>
-                        <div class="skills-icons">
+                        <div data-aos="zoom-in" data-aos-delay="200" class="skills-icons">
                             <img src="assets/mongodb.png" width="80" alt="MongoDB">
                             <h4>MongoDB</h4>
                         </div>
-                        <div class="skills-icons">
+                        <div data-aos="zoom-in" data-aos-delay="300" class="skills-icons">
                             <img src="assets/bootstrap.png" width="80" alt="Bootstrap">
                             <h4>Bootstrap</h4>
                         </div>
                     </div>
-                    <h3>Utilities</h3>
-                    <div class="skill-groups">
+                    <h3 data-aos="fade-up">Utilities</h3>
+                    <div data-aos="zoom-in" data-aos-delay="100" class="skill-groups">
                         <div class="skills-icons">
                             <img src="assets/git.png" width="80" alt="Git">
                             <h4>Git</h4>
                         </div>
-                        <div class="skills-icons">
+                        <div data-aos="zoom-in" data-aos-delay="200" class="skills-icons">
                             <img src="assets/postman.png" width="80" alt="Postman">
                             <h4>Postman</h4>
                         </div>
-                        <div class="skills-icons">
+                        <div data-aos="zoom-in" data-aos-delay="300" class="skills-icons">
                             <img src="assets/chrome.png" width="80" alt="Chrome">
                             <h4>Chrome Dev Tools</h4>
                         </div>
@@ -108,9 +110,9 @@
         <section class="container" id="projects-section">
             <div id="projects-container">
                 <a name="projects"></a>
-                <h2>Projects</h2>
+                <h2 data-aos="fade-up">Projects</h2>
                 <div id="project-cards-container">
-                    <div class="project-card">
+                    <div data-aos="zoom-in" data-aos-delay="100" class="project-card">
                         <img src="assets/MyRecipes.png" alt="MyRecipes Project" class="project-card-img">
                         <div class="project-card-body">
                             <h3>MyRecipes</h3>
@@ -145,10 +147,11 @@
         </section>
         <section class="container" id="about-section">
             <a name="about"></a>
-            <h2>About Me</h2>
+            <h2 data-aos="fade-up">About Me</h2>
             <div id="about-container">
-                <img src="assets/about-image.jfif" alt="laptop" id="about-image">
-                <div id="about-text">
+                <img data-aos="fade-right" data-aos-delay="100" src="assets/about-image.jfif" alt="laptop"
+                    id="about-image">
+                <div data-aos="fade-left" data-aos-delay="200" id="about-text">
                     <p>During my experience as a digital marketer, I realized that I was more interested in the UI/UX
                         aspect of optimizing a business's digital presence. So, I used my free time during the peak of
                         the pandemic
@@ -183,6 +186,10 @@
         </div>
     </footer>
     <script src="public/JavaScripts/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, });
+    </script>
 </body>
 
 </html>
