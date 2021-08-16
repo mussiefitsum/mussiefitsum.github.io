@@ -307,7 +307,7 @@ a {
         align-self: center;
     }
     #intro {
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/banner-image-mobile.jpg) center center;
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/banner-image-mobile.gif) center center;
         background-repeat: no-repeat;
         -o-background-size: cover;
         -moz-background-size: cover;
