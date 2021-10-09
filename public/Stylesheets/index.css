@@ -212,6 +212,8 @@ a {
 
 .project-card-img {
     width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .project-card-body {
